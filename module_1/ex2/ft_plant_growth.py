@@ -11,13 +11,13 @@ class Plant:
         for day in range(1, 8):
             print(f"=== Day {day} ===")
             print(f"{self.name}: {self.height}cm, {self.plant_age} days old")
-            self.__grow()
-            self.__age()
+            self.grow()
+            self.age()
 
-    def __grow(self) -> None:
+    def grow(self) -> None:
         self.height += 0.8
 
-    def __age(self) -> None:
+    def age(self) -> None:
         self.plant_age += 1
 
 
